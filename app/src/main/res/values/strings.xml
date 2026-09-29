@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Todos los textos fijos de la app. En los layouts se usan con @string/nombre -->
+<resources>
+    <string name="app_name">Convive</string>
+
+    <!-- MainActivity -->
+    <string name="titulo_app">CONVIVE</string>
+    <string name="subtitulo_inicial">Gestión de tu conjunto · Perfil</string>
+    <string name="subtitulo_seccion">Gestión de tu conjunto · %1$s</string>
+    <string name="desc_pago_rapido">Ir a pagar cuotas</string>
+
+    <!-- MenuFragment -->
+    <string name="titulo_menu">Menú</string>
+    <string name="menu_perfil">Perfil</string>
+    <string name="menu_fotos">Fotos</string>
+    <string name="menu_video">Video</string>
+    <string name="menu_web">Web</string>
+    <string name="menu_botones">Botones</string>
+
+    <!-- PerfilFragment -->
+    <string name="titulo_perfil">Mi perfil</string>
+    <string name="desc_foto_perfil">Foto de perfil del propietario</string>
+    <string name="estado_cuenta">Estado de cuenta</string>
+    <string name="datos_contacto">Datos de contacto</string>
+    <string name="historial_pagos">Historial de pagos</string>
+    <string name="preferencias">Preferencias</string>
+    <string name="notificaciones_push">Recibir notificaciones push</string>
+    <string name="descargar_comprobante">Descargar último comprobante</string>
+
+    <!-- FotosFragment -->
+    <string name="titulo_fotos">Fotos de reportes y PQRS</string>
+    <string name="desc_foto_reporte">Fotografía del reporte seleccionado</string>
+    <string name="adjuntar_foto">Adjuntar nueva foto</string>
+    <string name="lista_reportes">Reportes con fotografía</string>
+
+    <!-- VideoFragment -->
+    <string name="titulo_video">Video de inducción</string>
+    <string name="descripcion_video">Conoce cómo funciona el conjunto y la app Convive.</string>
+    <string name="estado_video_cargando">Cargando video…</string>
+    <string name="reproducir">Reproducir</string>
+    <string name="pausar">Pausar</string>
+    <string name="reiniciar">Reiniciar</string>
+
+    <!-- WebFragment -->
+    <string name="titulo_web">Portal web de PQRS</string>
+    <string name="descripcion_web">Escribe la dirección del portal para radicar o consultar tus PQRS.</string>
+    <string name="hint_url">https://…</string>
+    <string name="url_inicial">https://www.google.com</string>
+    <string name="cargar_url">Ir</string>
+
+    <!-- BotonesFragment -->
+    <string name="titulo_botones">Pago de cuotas</string>
+    <string name="descripcion_botones">Selecciona qué quieres pagar y cómo.</string>
+    <string name="paso_concepto">1. Concepto a pagar</string>
+    <string name="concepto_administracion">Cuota de administración – $150.000</string>
+    <string name="concepto_parqueadero">Parqueadero – $40.000</string>
+    <string name="concepto_extraordinaria">Cuota extraordinaria – $200.000</string>
+    <string name="paso_medio">2. Medio de pago</string>
+    <string name="medio_pse">PSE (débito bancario)</string>
+    <string name="medio_tarjeta">Tarjeta de crédito</string>
+    <string name="medio_nequi">Nequi</string>
+    <string name="resumen_incompleto">Selecciona un concepto y un medio de pago para ver el resumen.</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="descargar_recibo">Descargar comprobante</string>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Tema de la app: define los colores que usan por defecto botones, switches, radios, etc. -->
+<resources>
+    <style name="Base.Theme.Convive" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/convive_primario</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/convive_seleccion</item>
+        <item name="colorSecondary">@color/convive_acento</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="Theme.Convive" parent="Base.Theme.Convive" />
+</resources>

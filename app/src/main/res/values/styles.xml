@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Estilos de texto reutilizables: evitan repetir las mismas propiedades en cada TextView -->
+<resources>
+    <style name="TextoTituloSeccion">
+        <item name="android:textColor">@color/convive_primario</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextoSubtitulo">
+        <item name="android:textColor">@color/convive_texto</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextoCuerpo">
+        <item name="android:textColor">@color/convive_texto</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextoSecundario">
+        <item name="android:textColor">@color/convive_texto_secundario</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+</resources>

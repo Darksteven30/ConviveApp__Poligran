@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Interfaz del fragmento BOTONES (pago de cuotas).
+    Usa dos grupos de botones de opción (RadioGroup) y botones normales para
+    confirmar, cancelar y descargar el comprobante.
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/svBotones"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvEncabezadoBotones"
+            style="@style/TextoTituloSeccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/titulo_botones" />
+
+        <TextView
+            style="@style/TextoSecundario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/descripcion_botones" />
+
+        <TextView
+            style="@style/TextoSubtitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/paso_concepto" />
+
+        <RadioGroup
+            android:id="@+id/rgConcepto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbAdministracion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/concepto_administracion" />
+
+            <RadioButton
+                android:id="@+id/rbParqueadero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/concepto_parqueadero" />
+
+            <RadioButton
+                android:id="@+id/rbExtraordinaria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/concepto_extraordinaria" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/TextoSubtitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/paso_medio" />
+
+        <RadioGroup
+            android:id="@+id/rgMedioPago"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbPse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/medio_pse" />
+
+            <RadioButton
+                android:id="@+id/rbTarjeta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/medio_tarjeta" />
+
+            <RadioButton
+                android:id="@+id/rbNequi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/medio_nequi" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvResumenPago"
+            style="@style/TextoCuerpo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_tarjeta_estado"
+            android:padding="12dp"
+            android:text="@string/resumen_incompleto" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCancelarPago"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/cancelar" />
+
+            <Button
+                android:id="@+id/btnConfirmarPago"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/confirmar" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvResultadoPago"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_tarjeta_exito"
+            android:padding="12dp"
+            android:textColor="@color/convive_exito"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnDescargarRecibo"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/descargar_recibo"
+            android:visibility="gone" />
+    </LinearLayout>
+</ScrollView>

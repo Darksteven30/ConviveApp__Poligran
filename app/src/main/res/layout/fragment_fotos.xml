@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Interfaz del fragmento FOTOS.
+    Arriba: la foto seleccionada en grande con su descripción.
+    Abajo: una lista (ListView) con todas las fotos de reportes; tiene su propia barra de desplazamiento.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/tvEncabezadoFotos"
+        style="@style/TextoTituloSeccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_fotos" />
+
+    <ImageView
+        android:id="@+id/ivFotoSeleccionada"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_tarjeta"
+        android:contentDescription="@string/desc_foto_reporte"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tvTituloFotoSeleccionada"
+        style="@style/TextoSubtitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/tvDescripcionFoto"
+        style="@style/TextoSecundario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnAdjuntarFoto"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/adjuntar_foto" />
+
+    <TextView
+        style="@style/TextoSubtitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/lista_reportes" />
+
+    <ListView
+        android:id="@+id/lvFotos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:divider="@color/convive_borde"
+        android:dividerHeight="1dp"
+        android:fadeScrollbars="false"
+        android:paddingBottom="72dp" />
+</LinearLayout>

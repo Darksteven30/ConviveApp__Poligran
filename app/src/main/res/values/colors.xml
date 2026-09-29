@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Paleta de colores de Convive. Se usa en todos los layouts con @color/nombre -->
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Identidad visual: verde azulado (primario) y naranja (acento) -->
+    <color name="convive_primario">#FF0F766E</color>
+    <color name="convive_primario_claro">#FF14B8A6</color>
+    <color name="convive_seleccion">#FFCCF2EC</color>
+    <color name="convive_acento">#FFF97316</color>
+    <color name="convive_acento_oscuro">#FFC2410C</color>
+    <color name="convive_acento_claro">#FFFFF3E8</color>
+
+    <!-- Fondos, bordes y textos -->
+    <color name="convive_fondo_menu">#FFE8ECEF</color>
+    <color name="convive_tarjeta">#FFF9FAFB</color>
+    <color name="convive_borde">#FFCBD5E1</color>
+    <color name="convive_texto">#FF1F2937</color>
+    <color name="convive_texto_secundario">#FF6B7280</color>
+
+    <!-- Mensajes de éxito (pago aprobado) -->
+    <color name="convive_exito">#FF15803D</color>
+    <color name="convive_exito_claro">#FFDCFCE7</color>
+</resources>
